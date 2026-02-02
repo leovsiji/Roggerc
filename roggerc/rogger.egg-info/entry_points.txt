@@ -1,0 +1,2 @@
+[console_scripts]
+captain = rogger.main:main

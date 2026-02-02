@@ -1,0 +1,9 @@
+setup.py
+rogger/__init__.py
+rogger/main.py
+rogger.egg-info/PKG-INFO
+rogger.egg-info/SOURCES.txt
+rogger.egg-info/dependency_links.txt
+rogger.egg-info/entry_points.txt
+rogger.egg-info/requires.txt
+rogger.egg-info/top_level.txt
