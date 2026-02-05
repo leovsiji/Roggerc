@@ -19,7 +19,7 @@ def rogger():
 
 
     while True:
-        url = input("paste: ")
+        url = input("paste:> ")
         if url in "e,E,exit":
             print("FI")
             sys.exit()

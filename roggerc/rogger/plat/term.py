@@ -5,6 +5,7 @@ import time
 
 def bain():
     ban = [
+         "                                   ",
         r"▒█▀▀█ █▀▀█ █▀▀▀ █▀▀▀ █▀▀ █▀▀█ ▒█▀▀█",
         r"▒█▄▄▀ █░░█ █░▀█ █░▀█ █▀▀ █▄▄▀ ▒█░░░",
         r"▒█░▒█ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀ ▀░▀▀ ▒█▄▄█",
@@ -38,7 +39,7 @@ exit: e
 
                 ydl_opts = {
                     "format": "best",
-                    "outtmpl": f"{dpat}/%(title)s.%(ext)s",
+                    "outtmpl": f"{dpat}/%(title)s.mp3",
                     "quiet": False,
                 }
 
