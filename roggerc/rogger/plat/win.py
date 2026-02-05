@@ -3,50 +3,7 @@ import os
 import sys
 import time
 
-
-    
-
-def rogger():
-
-    dpat=os.path.join(os.path.expanduser("~"),"Downloads")
-    faa="rogger"
-    pat=os.path.join(dpat,faa)
-
-    if not os.path.exists(pat):
-        os.mkdir(pat)
-
-    
-
-
-    while True:
-        url = input("paste:> ")
-        if url in "e,E,exit":
-            print("FI")
-            sys.exit()
-            break     
-        else:
-            ydl_opts = {
-                "format": "best",  
-                "outtmpl": f"{pat}/%(title)s.mp3",
-                "quiet": False,
-            }
-
-
-
-
-        try:
-            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
-                ydl.download([url])
-            print("Download complete ✅")
-        except yt_dlp.utils.DownloadError as es:
-            print("Download failed ❌")
-            print(es)
-
-
-       
-
-def choice():
-    def bain():
+def bain():
         ban=[
             r"                                                                     ",
             r" /$$$$$$$                                                     /$$$$$$",
@@ -66,33 +23,55 @@ def choice():
         for l in ban:
             print(l)
             time.sleep(0.30)
-        print("""
+    
+    
+
+def rogger():
+    bain()
+
+    print("""
 download:d
 exit:e         
             """)
-        
-    bain()
+    dpat=os.path.join(os.path.expanduser("~"),"Downloads")
+    faa="rogger"
+    pat=os.path.join(dpat,faa)
 
- 
-        
+    if not os.path.exists(pat):
+        os.mkdir(pat)
 
-          
-    
+        
     i = input("rogger:> ")
     while True:
             if i in "e,E,exit":
                 print("FI")
                 sys.exit()
             elif i in "d,D":
-                rogger()
-                break
-            else:
-                print("FI")
-                sys.exit()
+                while True:
+                    url = input("paste:> ")
+                    if url in "e,E,exit":
+                        print("FI")
+                        sys.exit()
+                        break     
+                    else:
+                        ydl_opts = {
+                            "format": "best",  
+                            "outtmpl": f"{pat}/%(title)s.mp3",
+                            "quiet": False,
+                        }
                 
+                        
+                        try:
+                            with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+                                ydl.download([url])
+                                print("Download complete ✅")
+                        except yt_dlp.utils.DownloadError as es:
+                            print("Download failed ❌")
+                            print(es)
+            else:
+                rogger()
 
-def main():               
-    choice()               
+def main():                              
     rogger()
 
 
