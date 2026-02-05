@@ -35,6 +35,7 @@ exit: e
                 url = input("paste:> ")
 
                 if url.lower() in ["e", "exit"]:
+                    print("FI")
                     sys.exit() 
 
                 ydl_opts = {
