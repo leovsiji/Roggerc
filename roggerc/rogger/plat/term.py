@@ -6,7 +6,7 @@ import time
 
     
 
-def rogger():
+def roggerc():
 
     dpat = os.path.expanduser("~/storage/downloads")
     while True:
@@ -36,44 +36,44 @@ def rogger():
 
        
 
-    def choice():
-        def bain():
-            ban=[
+def choice():
+    def bain():
+        ban=[
               
-                r"▒█▀▀█ █▀▀█ █▀▀▀ █▀▀▀ █▀▀ █▀▀█ ▒█▀▀█", 
-                r"▒█▄▄▀ █░░█ █░▀█ █░▀█ █▀▀ █▄▄▀ ▒█░░░",
-                r"▒█░▒█ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀ ▀░▀▀ ▒█▄▄█",
-            ]
+            r"▒█▀▀█ █▀▀█ █▀▀▀ █▀▀▀ █▀▀ █▀▀█ ▒█▀▀█", 
+            r"▒█▄▄▀ █░░█ █░▀█ █░▀█ █▀▀ █▄▄▀ ▒█░░░",
+            r"▒█░▒█ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀ ▀░▀▀ ▒█▄▄█",
+        ]
          
-            for l in ban:
-                print(l)
-                time.sleep(0.45)
+        for l in ban:
+            print(l)
+            time.sleep(0.45)
         
-        bain()
+    bain()
 
  
         
-        print("""
+    print("""
 download:d
 exit:e         
-            """)
+        """)
           
     
-        i = input("rogger:> ")
-        while True:
-                if i in "e,E,exit":
-                    print("FI")
-                    sys.exit()
-                elif i in "d,D":
-                    rogger()
-                    break
-                else:
-                    choice()
-                    break
+    i = input("rogger:> ")
+    while True:
+            if i in "e,E,exit":
+                print("FI")
+                sys.exit()
+            elif i in "d,D":
+                roggerc()
+                break
+            else:
+                choice()
+                break
 
                 
                 
-
-rogger()
+choice()
+roggerc()
 
 
