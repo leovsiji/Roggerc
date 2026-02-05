@@ -7,7 +7,7 @@ g=env()
 
 
 def main():
-    if os.path.exists("/data/data/com.termux"):
-        term.roggerc()
+    if g=="termux":
+        term.main()
     elif g=="windows":
-        win.rogger()
+        win.main()

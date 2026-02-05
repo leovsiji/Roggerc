@@ -87,11 +87,12 @@ exit:e
                 rogger()
                 break
             else:
-                choice()
-                break
-
+                print("FI")
+                sys.exit()
                 
-choice()               
-rogger()
+
+def main():               
+    choice()               
+    rogger()
 
 
