@@ -51,8 +51,8 @@ A **cross‑platform CLI-based MP3 downloader** that automatically adapts its be
 ## windows
 ```bash
 git clone https://github.com/leovsiji/Roggerc.git
-python -m venv add
-add\scripts\activate
+python -m venv ship
+ship\scripts\activate
 cd Roggerc\Roggerc
 pip install -e .
 captain  
@@ -81,7 +81,22 @@ Follow the on-screen CLI instructions to download MP3 files.
 
 ![Termux CLI Execution](images/term.jpeg)
 
-### $ After installation to use again type "captain" then type "d" then paste a link if you want to exit type "e" at paste or rogger  
+#### ▶ How to Use the CLI MP3 Downloader
+
+1. To start the program, type:
+```bash
+captain
+```
+2. When the menu appears, type:
+```bash
+d
+```
+3. paste a youtube link and the mp3 will download 
+4. To exit the program at any time:
+
+        Type 'e' at the paste link prompt, or
+        Type 'e' at the rogger menu
+
 
 ---
 
