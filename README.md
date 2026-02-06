@@ -81,7 +81,7 @@ Follow the on-screen CLI instructions to download MP3 files.
 
 ![Termux CLI Execution](images/term.jpeg)
 
->After installation to use again type "captain" then type "d" then paste a link if you want to exit type "e" at paste or rogger  
+### $ After installation to use again type "captain" then type "d" then paste a link if you want to exit type "e" at paste or rogger  
 
 ---
 
