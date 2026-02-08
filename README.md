@@ -61,7 +61,7 @@ captain
 ## termux
 ```bash
 git clone https://github.com/leovsiji/Roggerc.git
-cd Roggerc\Roggerc
+cd Roggerc/Roggerc
 pip install -e .
 captain 
 ```
